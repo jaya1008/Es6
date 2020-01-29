@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Demo: JavaScript Accessing Array Elements</h1>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	<p id="p6"></p>
+	<p id="p7"></p>
+	<p id="p8"></p>
+	<p id="p9"></p>
+		
+	<script>
+		var stringArray = new Array("one", "two", "three", "four");
+
+		document.getElementById("p1").innerHTML = stringArray[0]; 
+		document.getElementById("p2").innerHTML = stringArray[1]; 
+		document.getElementById("p3").innerHTML = stringArray[2]; 
+		document.getElementById("p4").innerHTML = stringArray[3]; 
+
+		var numericArray = [1, 2, 3, 4];
+
+		document.getElementById("p5").innerHTML = numericArray[0]; 
+		document.getElementById("p6").innerHTML = numericArray[1]; 
+		document.getElementById("p7").innerHTML = numericArray[2]; 
+		document.getElementById("p8").innerHTML = numericArray[3]; 
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        Implode an array with jQuery/Javascript? 
+    </title> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        Seven Mentor
+    </h1> 
+      
+    <b> 
+        Implode an array with jQuery/Javascript?  
+    </b> 
+      
+    <p> 
+        Original array is ["One", 
+        "Two", "Three", "Four", "Five"] 
+    </p> 
+      
+    <p> 
+        Imploded array is:  
+        <span class="output"></span> 
+    </p> 
+  
+    <button onclick="implodeArray()"> 
+        Implode Array 
+    </button> 
+      
+    <script type="text/javascript"> 
+      
+        function implodeArray() { 
+            originalArray = 
+                ["One", "Two", "Three", "Four", "Five"]; 
+          
+            separator = ' '; 
+            implodedArray = originalArray.join(separator); 
+  
+            console.log(implodedArray); 
+            document.querySelector('.output').textContent 
+                    = implodedArray; 
+        } 
+    </script>
+    <--Implode an array with jQuery/JavaScript
+    Given an array of elements and the task is to implode 
+    (join the elements of an array) the array elements.
+    
+    Method 1: Using join() method: The join()
+     method can be used to join an array with a 
+     separator and return it as a string. 
+     The join() method takes in the optional parameter of a separator. 
+     The separator is assumed to be a comma, 
+     if not specified. If the array contains only one string,
+      then it would be returned without the separator.--> 
+</body> 
+  
+</html>                     

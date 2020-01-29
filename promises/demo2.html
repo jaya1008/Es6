@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        const rejectedPromise = () => {
+            return new Promise((resolve, reject) => {
+                console.log('I promise!')
+                reject('You lied to me!!')
+            })
+        }
+
+        rejectedPromise()
+            .then(() => {
+                console.log('I made it!')
+            })
+            .catch(err => {
+                console.log('How dare you?')
+                console.log(err)
+            })
+
+    </script>
+</head>
+
+</html>
+
+<body>
+  Reject Promise
+</body>

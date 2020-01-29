@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Demo: JavaScript length property</h1>
+	<p id="p0"></p>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+		
+	<script>
+		var stringArray = new Array("one", "two", "three", "four");
+
+		for (var i = 0; i < stringArray.length ; i++) 
+		{
+			document.getElementById("p" + i).innerHTML = stringArray[i];
+		}
+    </script>
+</body>
+</html>

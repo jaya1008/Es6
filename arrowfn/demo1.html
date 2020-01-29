@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        function circleArea1(r) {
+            var PI = 3.14;
+            return PI * r * r;
+        }
+        let circleArea2 = (r) => {
+            var PI = 3.14;
+            return PI * r * r; //return statement is manditory
+        }
+        let circleArea3 = r => 3.14 * r * r;
+        console.log(circleArea1(5));
+        console.log(circleArea2(5));
+        console.log(circleArea3(5));
+
+
+        var a = 4;
+        let square2 = () => {
+            return a * a
+        };
+        console.log(square2());
+
+        let mul = (a, b) => a * b;
+        console.log(mul(4, 5));
+    </script>
+</head>
+
+</html>

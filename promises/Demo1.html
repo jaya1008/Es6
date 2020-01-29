@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        const myPromise = () => {
+            return new Promise((resolve, reject) => {
+                console.log('I promise!')
+                resolve()
+            })
+        }
+
+        myPromise()
+            .then(() => {
+                console.log('I made it!')
+            })
+
+    </script>
+</head>
+<body>
+        Constructing a promise
+        It takes a function with two parameters,
+         usually called resolve and reject.
+          resolve is the function we will call when our promise is fulfilled,
+           reject will be called when our promise is rejected.
+Let's start with a function that returns a promise. This promise will always be fulfilled.
+
+</body>
+</html>

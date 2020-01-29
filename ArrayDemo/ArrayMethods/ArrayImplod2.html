@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        Implode an array with jQuery/Javascript?  
+    </title> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        GeeksforGeeks 
+    </h1> 
+      
+    <b> 
+        Implode an array with jQuery/Javascript?  
+    </b> 
+      
+    <p> 
+        Original array is ["One", 
+        "Two", "Three", "Four", "Five"] 
+    </p> 
+      
+    <p> 
+        Imploded array is:  
+        <span class="output"></span> 
+    </p> 
+  
+    <button onclick="implodeArray()"> 
+        Implode Array 
+    </button> 
+      
+    <script type="text/javascript"> 
+      
+        function implodeArray() { 
+            originalArray = 
+            ["One", "Two", "Three", "Four", "Five"]; 
+              
+            separator = '+'; 
+            implodedArray = ''; 
+  
+            for(let i = 0; i < originalArray.length; i++) { 
+  
+                // add a string from original array 
+                implodedArray += originalArray[i]; 
+  
+                // unless the iterator reaches the end of 
+                // the array add the separator string 
+                if(i != originalArray.length - 1){ 
+                    implodedArray += separator;  
+                } 
+            } 
+  
+            console.log(implodedArray); 
+            document.querySelector('.output').textContent
+                    = implodedArray; 
+        } 
+    </script> 
+</body> 
+  
+</html>                     

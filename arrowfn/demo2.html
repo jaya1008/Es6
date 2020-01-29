@@ -1,0 +1,65 @@
+<html>
+<head>
+<script>
+//this concept of function
+var x=function()
+{
+    this.val=1;
+    setTimeout(function(){
+        this.val++;
+        console.log(this.val); 
+    },1)
+}
+var xx=new x(); // NAN as this of setTimeout () and X function is different
+//Solution is 
+/*var y=function()
+{
+    var that=this;
+    this.val=1;
+    setTimeout(function(){
+
+        that.val++;
+        console.log(that.val);
+    },1)
+}
+var yy=new y();
+
+//using arraow fn :fat arrows dont have there own this .
+
+var z=function()
+{
+    this.val=1;
+    setTimeout(()=>{
+
+        this.val++;
+        console.log(this.val);
+    },1)
+}
+var zz=new z();
+
+var fn1=function()
+{
+   console.log(arguments[0]);
+}
+fn1(1,2,3);
+//fat arrows function does not have arguments inside the function
+
+var fn2 = () =>
+{
+    console.log("in fn2()");
+    console.log(arguments[0]);
+}
+fn2(1,2,3);
+
+var fn3 = (...n) =>
+{
+    console.log("in fn2()");
+    console.log(n[0]);
+}
+fn3(1,2,3);*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

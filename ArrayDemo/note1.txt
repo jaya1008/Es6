@@ -1,0 +1,9 @@
+Points to Remember :
+An array is a special type of variable that stores multiple values using a special syntax.
+An array can be created using array literal or Array constructor syntax.
+Array literal syntax: var stringArray = ["one", "two", "three"];
+Array constructor syntax:var numericArray = new Array(3);
+A single array can store values of different data types.
+An array elements (values) can be accessed using zero based index (key). e.g. array[0].
+An array index must be numeric.
+Array includes length property and various methods to operate on array objects.

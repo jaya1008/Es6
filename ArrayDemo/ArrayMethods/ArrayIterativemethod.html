@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script>
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var every_result_is_smaller_than_9 = numbers.every(item => item < 9);
+
+        // this is equivalent with 
+        var every_result_is_smaller_than_9 = numbers.every(function (item) { return item < 9; });
+
+
+        console.log(every_result_is_smaller_than_9);  // false
+
+        var some_resulst_are_smaller_than_9 = numbers.some(item => item < 9);
+        console.log(some_resulst_are_smaller_than_9); // true
+
+        var odd_numbers = numbers.filter(item => item % 2 == 1);
+        console.log(odd_numbers);        // [1, 3, 5, 7, 9]
+
+        numbers.forEach(item => console.log("works"));
+
+
+        var numbers_plus_one = numbers.map(item => item + 1);
+        console.log(numbers_plus_one);
+    </script>
+</head>
+
+<body>
+<p>Iterative methods are very versatile and used in many scenarios. You will most likely encounter them even when working with the latest frameworks as well (angular, react, vue).</p>
+<ol>
+<li>every() – returns true if function returns true on every item</li>
+<li>filter() – returns an array of all items for which the function returns true</li>
+<li>forEach() – no return value (just run the function on every element in the list)</li>
+<li>map() – returns a new list with the result of each item in an array</li>
+<li>some() – returns true if the function returns true for at least one of the items</li>
+</ol>
+
+
+
+
+</body>
+
+</html>

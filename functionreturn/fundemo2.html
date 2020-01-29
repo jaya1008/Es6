@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script>
+        //passing undefined is considered as missing an argument. Here is an example
+        //to demonstrate this:
+        function myFunction(x = 1, y = 2, z = 3) {
+            console.log(x, y, z); // Output "6 7 3"
+        }
+        myFunction();
+        myFunction(6, 7);
+        //passing undefined is considered as missing an argument. Here is an example
+        //to demonstrate this:
+        function myFunction(x = 1, y = 2, z = 3) {
+            console.log(x, y, z); // Output "1 7 9"
+        }
+        myFunction(undefined, 7, 9);
+        //Defaults can also be expressions. Here is an example to demonstrate this:
+        function myFunction(x = 1, y = 2, z = 3 + 5) {
+            console.log(x, y, z); // Output "6 7 8"
+        }
+        myFunction(6, 7);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

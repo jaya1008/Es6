@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        let movie = "DDLJ"; //global scope
+        function getMovie() {
+             let movie="3 Idoit";
+            return movie;
+        }
+        console.log(movie);
+        console.log(getMovie());
+        console.log(movie);
+
+        function checkLet() {
+            let saying = "Js is easy language to learn";
+            let isProgramming = true;
+            console.log("before if " + saying)
+            if (isProgramming) {
+                let saying = "Js is used in modern web based application";
+                console.log("In fn()" + saying);
+            }
+            console.log("After if saying " + saying);
+        }
+        checkLet();
+    </script>
+</head>
+
+</html>
+
+<body>
+
+</body>
