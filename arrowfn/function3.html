@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function add(a,...b) // one parameter mandatory and second parameter is 0 or more values
+            {
+              var sum=0,i=0;
+              sum=sum+a;
+              for(var i=0; i<b.length; i++)
+              {
+                  sum=sum+b[i];
+              } 
+              return sum;
+            }
+            var res=add(4,6,9);
+            console.log(res);
+            var res=add(4,6);
+            console.log(res);
+            var res=add(4);
+            console.log(res);
+            
+        </script>
+    </head>
+</html>
